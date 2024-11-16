@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+header {
+    background-color: #a8dadc;
+    color: #1d3557;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.images-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 45%;
+}
+
+.image-container h3 {
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.image-container canvas {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.upload-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upload-section input[type="file"] {
+    padding: 10px;
+    border: 2px solid #a8dadc;
+    border-radius: 5px;
+    background-color: #f1faee;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.upload-section input[type="file"]:hover {
+    background-color: #e0f7fa;
+    border-color: #457b9d;
+}
+
+
+.controls-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.control-group {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.control-group h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1d3557;
+    font-size: 1.2em;
+}
+
+
+.btn {
+    background-color: #a8dadc;
+    color: #1d3557;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #457b9d;
+    transform: scale(1.05);
+}
+
+
+.input, .select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 2px solid #a8dadc;
+    border-radius: 5px;
+    background-color: #f1faee;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input:focus, .select:focus {
+    border-color: #457b9d;
+    background-color: #e0f7fa;
+    outline: none;
+}
+
+
+footer {
+    background-color: #a8dadc;
+    color: #1d3557;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    border-top: 2px solid #1d3557;
+}

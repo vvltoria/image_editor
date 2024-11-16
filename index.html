@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб-приложение для Обработки Изображений</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Обработка Изображений</h1>
+    </header>
+    <main>
+        <section class="images-section">
+            <div class="image-container">
+                <h3>Исходное Изображение</h3>
+                <canvas id="original-canvas"></canvas>
+            </div>
+            <div class="image-container">
+                <h3>Обработанное Изображение</h3>
+                <canvas id="processed-canvas"></canvas>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <input type="file" id="upload" accept="image/*">
+        </section>
+
+        <section class="controls-section">
+            <div class="control-group">
+                <h2>Увеличение Резкости</h2>
+                <button id="sharpen" class="btn">Применить</button>
+            </div>
+
+            <div class="control-group">
+                <h2>Глобальная Пороговая Обработка</h2>
+                <select id="threshold-method" class="select">
+                    <option value="otsu">Метод Оцу</option>
+                    <option value="mean">Среднее Значение</option>
+                </select>
+                <button id="apply-threshold" class="btn">Применить</button>
+            </div>
+
+            <div class="control-group">
+                <h2>Адаптивная Пороговая Обработка</h2>
+                <label for="block-size">Размер Блока:</label>
+                <input type="number" id="block-size" class="input" value="15" min="3" max="101" step="2">
+                <label for="constant">Константа C:</label>
+                <input type="number" id="constant" class="input" value="10" min="0" max="100" step="1">
+                <button id="apply-adaptive-threshold" class="btn">Применить</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
